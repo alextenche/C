@@ -25,7 +25,20 @@ int main (){
     int a = 5, b = 7;
     swap(&a, &b);
     // now, a=7, b=5
-    printf("a is %d, b is %d", a, b);
+    printf("a is %d, b is %d\n", a, b);
+
+    int s = sizeof(char);  // == 1
+    printf("sizeof(char) ---> %d\n", s);
+
+    double f = sizeof(f);  // == 8
+    printf("sizeof(f) ---> %lf\n", f);
+
+    int array1[8];
+    printf("sizeof(array1[8]) ---> %d\n", sizeof(array1));
+
+
+
+
 
     return 0;
 }
